@@ -1,18 +1,8 @@
-@import '../../styles/variables';
 @import '../../styles/mixins';
 
 .pkgContainer {
   margin: 0;
   padding: 0;
-
-  li {
-    @include border-bottom-default($paleNavy);
-    list-style: none;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
 
   .listTitle {
     font-weight: $font-weight-regular;
