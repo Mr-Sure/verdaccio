@@ -28,13 +28,9 @@ export default class PackageList extends React.Component {
   renderList = () => {
     const { packages } = this.props;
     return (
-      packages.map((pkg, i) => {
-        const { label, version, description, time, author, keywords } = pkg;
-        const license = formatLicense(pkg.license);
-        return (
-          <Package key={i} {...{ label, version, author, description, license, time, keywords }} />
-        );
-      })
+      packages.map((pkg, i) => (
+        <Package key={i} {...pkg} label={undefined} license={formatLicense(pkg.license)} />
+      ))
     );
   }
 

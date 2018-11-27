@@ -91,6 +91,7 @@ export const Time = styled(AccessTime)`
 export const Published = styled.span`
   && {
     display: flex;
+    align-items: center;
     color: #2f273c;
   }
 `;

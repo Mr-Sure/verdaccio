@@ -4,16 +4,16 @@
  */
 
 export interface IProps {
-  label?: string;
-  version?: string;
+  label: string;
+  version: string;
+  time: string;
   author?: IAuthor;
   description?: string;
   keywords?: array;
   license?: string;
-  time: string;
 }
 
-interface IAuthor {
+export interface IAuthor {
   name?: string;
   avatar?: string;
   email?: string;
